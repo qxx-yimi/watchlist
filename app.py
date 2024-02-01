@@ -223,5 +223,5 @@ def delete(movie_id):
     movie = Movie.query.get_or_404(movie_id)
     db.session.delete(movie)
     db.session.commit()
-    flash('Item deleted')
+    flash('Item deleted.')
     return redirect(url_for('index'))
